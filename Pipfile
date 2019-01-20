@@ -1,0 +1,37 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+django-cors-headers = "*"
+django = "*"
+djangorestframework = "*"
+django-allauth = "*"
+django-rest-auth = "*"
+dj-database-url = "*"
+psycopg2-binary = "*"
+django-extensions = "*"
+djangorestframework-jwt = "*"
+
+[requires]
+python_version = "3.6"
+
+[dev-packages]
+ipdb = "*"
+ipython = "*"
+django-nose = "*"
+django-debug-toolbar-template-timings = "*"
+django-debug-toolbar = "*"
+werkzeug = "*"
+cython = "*"
+nplusone = "*"
+
+[scripts]
+migrate = "python manage.py migrate"
+makemigrations = "python manage.py makemigrations"
+runserver = "python manage.py runserver"
+createsuperuser = "python manage.py createsuperuser"
+shell = "python manage.py shell_plus"
+collectstatic = "python manage.py collectstatic --no-input"
+show_urls = "python manage.py show_urls"
